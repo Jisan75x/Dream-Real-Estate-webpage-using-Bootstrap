@@ -1,0 +1,294 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    
+}
+
+/* Headings */
+
+h1, h2, h3 {font-weight: 800;}
+
+h1, h2 {
+    font-weight: 800;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    margin-bottom: 0;
+    padding: 15px auto;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 5.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.nav-item {
+    padding: 0 0.5rem;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+/* Title section */
+
+#title {
+    background-color: #4169E1;
+    color: #fff;
+}
+
+.container-fluid {
+    padding: 3% 15%;
+}
+
+.purchase-btn {
+    margin: 3% 3% 3% 0;
+    
+}
+
+/* Features section */
+
+#features {
+    padding: 5% 10%;
+    background-color: white;
+    position: relative;
+    bottom: 10px;
+}
+
+.feature-title, .feature-text {
+    text-align: center;
+}
+
+.feature-title {
+    font-weight: 800;
+}
+
+.feature-col {
+    margin: 5% 0;
+}
+
+.feature-row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.feature-icon {
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.feature-icon:hover {
+    color: #1F51FF;
+}
+
+/* Testimonials section */
+
+#testimonials, #press {
+    text-align: center;
+    background-color: #4169E1;
+}
+
+#testimonials {
+    color: #fff;
+}
+
+.c-item {
+    height: 480px;
+  }
+  
+.c-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+  }
+
+/* Press section */
+
+#press {
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+#pricing {
+    padding: 50px;
+    text-align: center;
+}
+
+.pricing-col {
+    padding: 3% 2%;
+}
+
+.pricing-header {
+    font-size: 1.5rem;
+}
+
+/* Call to action section */
+
+#cta {
+    background-color: #4169E1;
+    padding: 8% 3% 10%;
+    text-align: center;
+}
+
+.cta-header {
+    margin: 40px auto;
+    color: #fff;
+    font-size: 2.5rem;
+}
+.cta-em {
+    color: #fff;
+    font-size: 1.5rem;
+ }
+
+
+
+/* Footer section */
+
+.cta-row {
+    width: 40%;
+    margin: 0 auto;
+}
+
+#footer {
+    padding: 10vh 2%;
+    text-align: center;
+}
+
+.footer-icon {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* styles.css */
+
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Card styling */
+.card {
+    border-radius: 10px;
+}
+
+/* Error message styling */
+#error-message {
+    font-size: 14px;
+    color: red;
+}
+
+.tables{
+    width: 50%;
+    border-collapse: collapse; /* Removes double borders */
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+}
+#user-table td button.edit-btn, #user-table td button.delete-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+#user-table td button.edit-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+#user-table td button.edit-btn:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+#user-table td button.delete-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+#user-table td button.delete-btn:hover {
+    background-color: #e53935; /* Darker red */
+}
+
+#user-table td button:hover {
+    transition: background-color 0.3s ease;
+}
+th, td {
+    border: 1px solid #ddd; /* Adds borders */
+    padding: 8px;
+}
+
+th {
+    background-color: #f4f4f4; /* Light gray background for headers */
+    color: #333; /* Darker text for headers */
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternate row color */
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media queries */
+
+@media (max-width: 1100px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #features {
+        bottom: 140px;
+    }
+}
+
+@media (min-width: 550px) and (max-width: 950px) {
+    #features {
+        bottom: 220px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-fluid {
+        padding: 2% 3%;
+    }
+    .title-image {
+        width: 80vw;
+    }
+    h1, .purchase-btn {
+        margin-bottom: 0;
+    }
+    h1 {
+        text-align: center;
+    }
+    .cta-row {
+        width: 80%;
+    }
+}
